@@ -1,3 +1,4 @@
+/*section 2*/
 .relative-box {
 	width: 500px;
 	height: 500px;
@@ -5,6 +6,8 @@
 	background-color: yellow;
 	margin: 0 auto;
 	transition: all 2s linear 1s;
+	-webkit-box-shadow: 1px 9px 32px 5px #000000; 
+	box-shadow: 1px 9px 32px 5px #000000;
 }
 
 .relative-box:hover {
@@ -28,4 +31,29 @@
 .absolute-box:hover {
 	background-color: orange;
 	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/*section 2*/
+.ball {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	background-color: black;
+    border-radius: 100%;
+    animation: ball 5s infinite ease-in;
+}
+
+@keyframes ball {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+
+
+/*img*/
+img {
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
